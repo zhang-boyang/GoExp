@@ -87,6 +87,7 @@ func main() {
 	fmt.Println(MyStruct)
 
 	DMyStuct := DeriveMyExample{MyExample{"Kobe", 10, "AnPai"}, "man"}
+	DMyStuct.SetAttAge(22)
 	fmt.Println(DMyStuct)
 
 	lambdaFunc := func(a, b int) int { return a + b }
