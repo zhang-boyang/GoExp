@@ -1,2 +1,2 @@
 # GoExp
-go experience
+go experiment
