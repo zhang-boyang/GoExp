@@ -92,4 +92,16 @@ func main() {
 
 	lambdaFunc := func(a, b int) int { return a + b }
 	fmt.Println(lambdaFunc(10, 11))
+
+	var (
+		vV   int   = 42
+		vVp  *int  = &vV
+		vVpp **int = &vVp
+	)
+
+	fmt.Println(vV, &vV, *vVp, vVp, &vVp, **vVpp, *vVpp, vVpp)
+
+	var B byte = 'Q'
+	fmt.Println(B)
+
 }
