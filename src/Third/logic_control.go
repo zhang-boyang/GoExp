@@ -95,6 +95,7 @@ func main() {
 	o[0] = 10086
 	fmt.Println(p, o)
 
+	//p[4] = 2 panic: runtime error: index out of range
 }
 
 func max(a, b uint) uint {
