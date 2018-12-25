@@ -10,6 +10,14 @@ type Rect struct {
 	height int
 }
 
+type test interface {
+	test()
+}
+
+type Stest struct {
+	a int
+}
+
 func main() {
 	var r Rect = Rect{50, 60}
 	w := *(*int)(unsafe.Pointer(&r))
@@ -47,4 +55,10 @@ func string2slice(list string) []byte {
 	sliceHead[1] = address[1]
 	sliceHead[2] = address[1]
 	return *(*[]byte)(unsafe.Pointer(&sliceHead))
+
+	/*
+		Ts := Stest{a: 1}
+		var T test = Ts
+		data must implement interface this interface implement (missing test method)
+	*/
 }
